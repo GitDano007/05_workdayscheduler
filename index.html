@@ -29,8 +29,6 @@
 
 
       <script type="text/javascript">
-        <!--
-        
         var m_names = new Array("January", "February", "March", 
         "April", "May", "June", "July", "August", "September", 
         "October", "November", "December");
@@ -40,17 +38,22 @@
         var curr_month = d.getMonth();
         var curr_year = d.getFullYear();
         document.write(curr_date + "-" + m_names[curr_month] 
-        + "-" + curr_year);
-             
+        + "-" + curr_year);      
         </script>
-        
-      <p id="currentDay" class="lead"></p>
-    </header>
-    <div class="container">
-      <!-- Timeblocks go here -->
-    </div>
+        <p></p>
+<p><button class="btn btn-light" id="clear">Clear</button></p>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-  </body>
-</html>
+               
+        
+    <form>
+      
+    
+      <div class="container row m-3"><br />
+        <br />09:00 AM
+       <div class="col-lg-10 col-md-10 col-sm-8">
+        <textarea class="form-control" id="workHour9" data-hour="9" rows="2" placeholder="Enter hourly events here..."></textarea>
+        </div>
+        <div class="col-lg-1 col-md-1 col-sm-2">
+        <button id="button9" type="button" class="saveBtn p-3">save</button>
+        </div>
+      </div>
